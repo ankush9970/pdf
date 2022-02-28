@@ -1,0 +1,352 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Feb 27, 2022 at 07:07 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.0.13
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `fms`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `about_teacher`
+--
+
+CREATE TABLE `about_teacher` (
+  `id` int(10) NOT NULL,
+  `st_name` varchar(255) NOT NULL,
+  `st_roll` varchar(255) NOT NULL,
+  `st_branch` varchar(50) NOT NULL,
+  `st_year` varchar(15) NOT NULL,
+  `teacher_name` varchar(60) NOT NULL,
+  `teacher_dp` varchar(10) NOT NULL,
+  `subject` varchar(50) NOT NULL,
+  `suggestions` varchar(2000) NOT NULL,
+  `q1` varchar(15) NOT NULL,
+  `q2` varchar(15) NOT NULL,
+  `q3` varchar(15) NOT NULL,
+  `q4` varchar(15) NOT NULL,
+  `q5` varchar(15) NOT NULL,
+  `q6` varchar(15) NOT NULL,
+  `q7` varchar(15) NOT NULL,
+  `q8` varchar(15) NOT NULL,
+  `q9` varchar(15) NOT NULL,
+  `q10` varchar(15) NOT NULL,
+  `q11` varchar(15) NOT NULL,
+  `q12` varchar(15) NOT NULL,
+  `q13` varchar(15) NOT NULL,
+  `q14` varchar(15) NOT NULL,
+  `q15` varchar(15) NOT NULL,
+  `q16` varchar(15) NOT NULL,
+  `q17` varchar(15) NOT NULL,
+  `q18` varchar(15) NOT NULL,
+  `q19` varchar(15) NOT NULL,
+  `q20` varchar(15) NOT NULL,
+  `q21` varchar(15) NOT NULL,
+  `q22` varchar(15) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `ip_addr` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `about_teacher`
+--
+
+INSERT INTO `about_teacher` (`id`, `st_name`, `st_roll`, `st_branch`, `st_year`, `teacher_name`, `teacher_dp`, `subject`, `suggestions`, `q1`, `q2`, `q3`, `q4`, `q5`, `q6`, `q7`, `q8`, `q9`, `q10`, `q11`, `q12`, `q13`, `q14`, `q15`, `q16`, `q17`, `q18`, `q19`, `q20`, `q21`, `q22`, `date`, `ip_addr`) VALUES
+(29, 'Vaibhav Sobhani', '4', 'CSE', 'IIIrd', 'Mrs. Jyoti Mathur', 'CSE', 'C++', '', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', '2021-07-20 04:54:37', '157.47.135.149'),
+(30, 'Ankush Jatav', '1', 'CSE', 'IIIrd', 'Mrs. Reenu Shukl', 'CSE', 'Computer Networks', '', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Very Good', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', '2021-07-20 04:55:37', '157.47.135.149'),
+(31, 'Pramod Kumar', '3', 'CSE', 'IIIrd', 'Mrs. Jyoti Mathur', 'CSE', 'C++', '', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Good', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', '2021-07-20 04:56:46', '157.47.135.149'),
+(32, 'Gourav Kumar Sharma', '2', 'CSE', 'IIIrd', 'Mrs. Jyoti Mathur', 'CSE', 'C++', '', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Average', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', 'Excellent', '2021-07-20 04:57:36', '157.47.135.149'),
+(33, 'Ankush Jatav', '1', 'CSE', 'IIIrd', 'Mr. KK Agrawal', 'CSE', 'Unix and Shell Programing', 'airodump-ng -c 1 --bssid 70:5A:AC:19:23:97 wlan0mon\r\naireplay-ng -0 0 -a 70:5A:AC:19:23:97 -c 98:06:3C:26:1D:A4 wlan0mon', 'Very Good', 'Very Good', 'Very Good', 'Very Good', 'Very Good', 'Very Good', 'Very Good', 'Very Good', 'Very Good', 'Very Good', 'Very Good', 'Very Good', 'Very Good', 'Very Good', 'Very Good', 'Very Good', 'Very Good', 'Very Good', 'Very Good', 'Very Good', 'Very Good', 'Very Good', '2021-08-03 05:56:21', '157.38.39.248');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `about_teaching`
+--
+
+CREATE TABLE `about_teaching` (
+  `sid` int(10) NOT NULL,
+  `st_name` varchar(255) NOT NULL,
+  `st_roll` varchar(255) NOT NULL,
+  `st_branch` varchar(255) NOT NULL,
+  `st_year` varchar(15) NOT NULL,
+  `q5` varchar(255) NOT NULL,
+  `q6` varchar(255) NOT NULL,
+  `q7` varchar(255) NOT NULL,
+  `q8` varchar(255) NOT NULL,
+  `q9` varchar(255) NOT NULL,
+  `q10` varchar(255) NOT NULL,
+  `q11` varchar(255) NOT NULL,
+  `q12` varchar(255) NOT NULL,
+  `q13` varchar(255) NOT NULL,
+  `q14` varchar(255) NOT NULL,
+  `q15` varchar(255) NOT NULL,
+  `q16` varchar(255) NOT NULL,
+  `suggestions` text NOT NULL,
+  `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `ip_addr` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int(10) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `pass` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id`, `name`, `pass`) VALUES
+(1, 'Admin', '*6BB4837EB74329105EE4568DDA7DC67ED2CA2AD9'),
+(3, 'ankush', '123456'),
+(12, 'ankushh jatav', '123');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `posts`
+--
+
+CREATE TABLE `posts` (
+  `id` int(11) NOT NULL,
+  `title` varchar(100) NOT NULL,
+  `content` text NOT NULL,
+  `link` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `post_rating`
+--
+
+CREATE TABLE `post_rating` (
+  `id` int(11) NOT NULL,
+  `userid` varchar(255) NOT NULL,
+  `postid` varchar(255) NOT NULL,
+  `rating` int(2) NOT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `post_rating`
+--
+
+INSERT INTO `post_rating` (`id`, `userid`, `postid`, `rating`, `timestamp`) VALUES
+(1, 'Mrs. Jyoti Mathur', 'C++', 5, '2021-07-20 04:54:37'),
+(2, 'Mrs. Reenu Shukl', 'Computer Networks', 4, '2021-07-20 04:55:37'),
+(3, 'Mrs. Jyoti Mathur', 'C++', 3, '2021-07-20 04:56:46'),
+(4, 'Mrs. Jyoti Mathur', 'C++', 2, '2021-07-20 04:57:36'),
+(5, 'Mr. KK Agrawal', 'Unix and Shell Programing', 4, '2021-08-03 05:56:21');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `query`
+--
+
+CREATE TABLE `query` (
+  `id` int(10) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `mobile` varchar(15) NOT NULL,
+  `question` text NOT NULL,
+  `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `query`
+--
+
+INSERT INTO `query` (`id`, `name`, `email`, `mobile`, `question`, `date`) VALUES
+(1, 'admin', 'Admin@123456', 'dwdw', 'ddwd', '2021-01-24 12:35:31'),
+(2, 'Name', 'Name', 'Name', 'Name', '2021-01-24 14:14:00'),
+(3, 'JK', 'JK@J', '1234567890', 'JK', '2021-02-01 14:10:01'),
+(4, 'madarchod', 'bhosdiwlala@gm,ail.com', '1214173314', 'bhago bhosdiwalon bahot kharab padathe ho', '2021-02-02 05:10:07');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `st_login`
+--
+
+CREATE TABLE `st_login` (
+  `st_id` int(10) NOT NULL,
+  `st_name` varchar(255) NOT NULL,
+  `st_pass` varchar(255) NOT NULL,
+  `st_roll` varchar(5) NOT NULL,
+  `branch` varchar(50) NOT NULL,
+  `year` varchar(20) NOT NULL,
+  `attend` varchar(255) NOT NULL,
+  `mobile` varchar(10) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `st_login`
+--
+
+INSERT INTO `st_login` (`st_id`, `st_name`, `st_pass`, `st_roll`, `branch`, `year`, `attend`, `mobile`, `email`, `date`) VALUES
+(28, 'Gourav Kumar Sharma', '*6BB4837EB74329105EE4568DDA7DC67ED2CA2AD9', '2', 'CSE', 'IIIrd', '80', '986543271', 'gourav@gmail.com', '2021-07-20 04:39:49'),
+(29, 'Pramod Kumar', '*6BB4837EB74329105EE4568DDA7DC67ED2CA2AD9', '3', 'CSE', 'IIIrd', '80', '9876546543', 'pramod@gmail.com', '2021-07-20 04:40:35'),
+(30, 'Ankush Jatav', '*6BB4837EB74329105EE4568DDA7DC67ED2CA2AD9', '1', 'CSE', 'IIIrd', '80', '8798789878', 'ankush@gmail.com', '2021-07-20 04:41:16'),
+(27, 'Vaibhav Sobhani', '*6BB4837EB74329105EE4568DDA7DC67ED2CA2AD9', '4', 'CSE', 'IIIrd', '76', '987654321', 'vaibhav@gmail.com', '2021-07-20 04:38:56');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `teacher_info`
+--
+
+CREATE TABLE `teacher_info` (
+  `id` int(10) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  `dep` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `teacher_info`
+--
+
+INSERT INTO `teacher_info` (`id`, `name`, `subject`, `dep`) VALUES
+(1, 'Ms. Jyoti Mathur', 'DBMS', 'CSE'),
+(2, 'Ms. Jyoti Mathur', 'C++', 'CSE'),
+(3, 'Ms. Reenu Shukal', '8085 microprocessor', 'CSE'),
+(4, 'Ms. Reenu Shukal', 'Computer Networks', 'CSE');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `about_teacher`
+--
+ALTER TABLE `about_teacher`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `about_teaching`
+--
+ALTER TABLE `about_teaching`
+  ADD PRIMARY KEY (`sid`);
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `posts`
+--
+ALTER TABLE `posts`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `post_rating`
+--
+ALTER TABLE `post_rating`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `query`
+--
+ALTER TABLE `query`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `st_login`
+--
+ALTER TABLE `st_login`
+  ADD PRIMARY KEY (`st_id`),
+  ADD UNIQUE KEY `st_roll` (`st_roll`,`branch`,`year`),
+  ADD UNIQUE KEY `mobile` (`mobile`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
+-- Indexes for table `teacher_info`
+--
+ALTER TABLE `teacher_info`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `about_teacher`
+--
+ALTER TABLE `about_teacher`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+
+--
+-- AUTO_INCREMENT for table `about_teaching`
+--
+ALTER TABLE `about_teaching`
+  MODIFY `sid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `posts`
+--
+ALTER TABLE `posts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `post_rating`
+--
+ALTER TABLE `post_rating`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `query`
+--
+ALTER TABLE `query`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `st_login`
+--
+ALTER TABLE `st_login`
+  MODIFY `st_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+
+--
+-- AUTO_INCREMENT for table `teacher_info`
+--
+ALTER TABLE `teacher_info`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
